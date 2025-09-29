@@ -1,0 +1,93 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title ¡Plan renovado en Stockeate!
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url('cid:backgroundStockeate') no-repeat top;
+        background-size: cover;
+        width: 100%;
+      }
+      .header {
+        position: relative;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      .container {
+        max-width: 800px;
+        margin: 2px auto;
+        text-align: center;
+        overflow: hidden;
+      }
+      .inner-container {
+        text-align: center;
+        background-color: #eeeeee;
+      }
+      .title {
+        margin-bottom: 0px;
+        padding: 0;
+        height: 160px;
+        width: 100%;
+        text-align: center;
+        background: url('cid:headerStockeateLogo') no-repeat center;
+        background-size: cover;
+        box-shadow: 0 15px 55px rgba(0, 0, 0, 0.2);
+      }
+      .contain {
+        padding: 40px 40px;
+      }
+      h2 {
+        color: #007bff;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      p {
+        color: black;
+        font-size: 12px;
+        text-align: center;
+      }
+      .btn {
+        background: #007bff;
+        color: white;
+        padding: 15px 25px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        display: inline-block;
+        margin: 20px 0;
+      }
+      a.btn {
+        text-decoration: none;
+        color: white !important;
+      }
+      .footer {
+        max-width: 600px;
+        margin: auto;
+        text-align: center;
+        font-size: 12px;
+        color: gray;
+        margin-top: 20px;
+      }
+  body
+    div(style='height:130px')
+    .container
+      .inner-container
+        .title
+        .contain
+          h2 ¡Hola, #{name}!
+          p ¡Felicidades! Tu plan <strong>#{plan}</strong> ha sido renovado exitosamente en Stockeate.
+          p Tu suscripción estará activa hasta el <strong>#{subscriptionEnd}</strong>.
+          p Continúa gestionando tu inventario con facilidad desde tu dashboard.
+          a.btn(href='#{dashboardUrl}') Ir a mi Cuenta
+      .footer
+        p(style='color: #ffffff;') ¡Gracias por seguir con Stockeate. Gestiona tu inventario con confianza!
+        p(style='color: #ffffff;') No respondas a este correo. Para cualquier consulta, contacta a nuestro equipo de soporte.
+        p(style='color: #ffffff;') Puedes contactarnos en <a href='mailto:serviciostockeate@gmail.com'>serviciostockeate@gmail.com</a>.

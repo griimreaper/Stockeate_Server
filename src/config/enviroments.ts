@@ -1,0 +1,20 @@
+import { config } from 'dotenv';
+config();
+
+export const PORT = process.env.PORT;
+export const DBUSERNAME = process.env.DBUSERNAME;
+export const DBDATABASE = process.env.DBDATABASE;
+export const DBHOST = process.env.DBHOST;
+export const DBPASSWORD = process.env.DBPASSWORD;
+export const DBPORT = process.env.DBPORT;
+export const DPUSERNAME = process.env.DPUSERNAME;
+export const DPDATABASE = process.env.DPDATABASE;
+export const DPHOST = process.env.DPHOST;
+export const DPPASSWORD = process.env.DPPASSWORD;
+export const CLIENT_URL = process.env.CLIENT_URL;
+export const SERVER_URL = process.env.SERVER_URL;
+export const JWT_SECRET = process.env.JWT_SECRET;
+export const EMAIL_USER = process.env.EMAIL_USER;
+export const PASS_USER = process.env.PASS_USER;
+export const BLOB_READ_WRITE_TOKEN = process.env.BLOB_READ_WRITE_TOKEN;
+export const API_KEY = process.env.API_KEY;

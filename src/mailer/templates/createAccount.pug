@@ -1,0 +1,96 @@
+doctype html
+html(lang='es')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title ¡Bienvenido a Stockeate!
+    style.
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url('cid:backgroundStockeate') no-repeat top;
+        background-size: cover;
+        width: 100%;
+      }
+      .header {
+        position: relative;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      .container {
+        max-width: 800px;
+        margin: 2px auto;
+        text-align: center;
+        overflow: hidden;
+      }
+      .inner-container {
+        text-align: center;
+        background-color: #eeeeee;
+      }
+      .title {
+        margin-bottom: 0px;
+        padding: 0;
+        height: 160px; /* Ajustado para mostrar el banner completo */
+        width: 100%;
+        text-align: center;
+        background: url('cid:headerStockeateLogo') no-repeat center;
+        background-size: cover;
+        box-shadow: 0 15px 55px rgba(0, 0, 0, 0.2);
+      }
+      .contain {
+        padding: 40px 40px;
+      }
+      h2 {
+        color: #007bff;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      p {
+        color: black;
+        font-size: 12px;
+        text-align: center;
+      }
+      .btn {
+        background: #007bff;
+        color: white;
+        padding: 15px 25px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        display: inline-block;
+        margin: 20px 0;
+      }
+      a.btn {
+        text-decoration: none;
+        color: white !important;
+      }
+      .footer {
+        max-width: 600px;
+        margin: auto;
+        text-align: center;
+        font-size: 12px;
+        color: gray;
+        margin-top: 20px;
+      }
+      .social-icons img {
+        width: 24px;
+        margin: 0 5px;
+      }
+  body
+    div(style='height:130px')
+    .container
+      .inner-container
+        .title
+        .contain
+          h2 ¡Hola, #{name}!
+          p Tu cuenta ha sido registrada exitosamente. ¡Estamos emocionados de tenerte en la comunidad Stockeate!
+          p Inicia sesión en tu cuenta y comienza a gestionar tu inventario con facilidad.
+          a.btn(href=dashboardUrl) Ir a mi Cuenta
+      .footer
+        p(style='color: #ffffffff;') ¡Gracias por elegir Stockeate. Gestiona tu inventario con confianza!
+        p(style='color: #ffffffff;') No respondas a este correo. Para cualquier consulta, contacta a nuestro equipo de soporte.
+        p(style='color: #ffffffff;') Puedes contactarnos en serviciostockeate@gmail.com.
