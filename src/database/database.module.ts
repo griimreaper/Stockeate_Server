@@ -18,11 +18,11 @@ import { CategoryProduct } from 'src/categories/entities/categoryProducts.entity
     SequelizeModule.forRoot({
       dialect: 'postgres',
       dialectModule: require('pg'),
-      host: env.DBHOST,
+      host: env.DPHOST,
       port: Number(env.DBPORT),
-      username: env.DBUSERNAME,
-      password: env.DBPASSWORD,
-      database: env.DBDATABASE,
+      username: env.DPUSERNAME,
+      password: env.DPPASSWORD,
+      database: env.DPDATABASE,
       models: [
         User,
         Product,
@@ -36,16 +36,16 @@ import { CategoryProduct } from 'src/categories/entities/categoryProducts.entity
         Category,
         Tenant,
       ],
-      // ssl: true,
-      // dialectOptions: {
-      //   ssl: {
-      //     rejectUnauthorized: true,
-      //   },
-      // },
+      ssl: true,
+      dialectOptions: {
+        ssl: {
+          rejectUnauthorized: true,
+        },
+      },
       autoLoadModels: true,
       synchronize: true,
       logging: false,
-      sync: { force: false }, // Solo para desarrollo; en producción usar migraciones
+      sync: { force: true }, // Solo para desarrollo; en producción usar migraciones
     }),
   ],
   exports: [SequelizeModule],
