@@ -45,7 +45,7 @@ import { CategoryProduct } from 'src/categories/entities/categoryProducts.entity
       autoLoadModels: true,
       synchronize: true,
       logging: false,
-      sync: { force: true }, // Solo para desarrollo; en producción usar migraciones
+      sync: { force: false }, // Solo para desarrollo; en producción usar migraciones
     }),
   ],
   exports: [SequelizeModule],
