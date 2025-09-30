@@ -4,11 +4,11 @@ import { Supplier } from './entities/supplier.entity';
 import { CreateSupplierDto } from './dto/create-supplier.dto';
 import { UpdateSupplierDto } from './dto/update-supplier.dto';
 import * as xlsx from 'xlsx';
-import { SheetsSupplierDto } from 'src/excel-products/dto/sheetSupplier.dto';
-import { SheetsSupplierUpdateDto } from 'src/excel-products/dto/sheetSupplierUpdate.dto';
-import { Purchase } from 'src/purchases/entities/purchase.entity';
-import { PurchaseItem } from 'src/purchase-items/entities/purchase-item.entity';
-import { Product } from 'src/products/entities/product.entity';
+import { SheetsSupplierDto } from '../excel-products/dto/sheetSupplier.dto';
+import { SheetsSupplierUpdateDto } from '../excel-products/dto/sheetSupplierUpdate.dto';
+import { Purchase } from '../purchases/entities/purchase.entity';
+import { PurchaseItem } from '../purchase-items/entities/purchase-item.entity';
+import { Product } from '../products/entities/product.entity';
 import { literal } from 'sequelize';
 
 @Injectable()

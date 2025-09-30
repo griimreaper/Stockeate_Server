@@ -9,8 +9,8 @@ import {
   BelongsTo,
   BelongsToMany,
 } from 'sequelize-typescript';
-import { Product } from 'src/products/entities/product.entity';
-import { Tenant } from 'src/tenants/entities/tenant.entity';
+import { Product } from '../../products/entities/product.entity';
+import { Tenant } from '../../tenants/entities/tenant.entity';
 import { v4 as uuidv4 } from 'uuid';
 import { CategoryProduct } from './categoryProducts.entity';
 

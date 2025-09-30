@@ -3,7 +3,7 @@ import { MailService } from './mail.service';
 import { MailerModule } from '@nestjs-modules/mailer';
 import { PugAdapter } from '@nestjs-modules/mailer/dist/adapters/pug.adapter';
 import { join } from 'path';
-import { transporter } from 'src/config/mailer';
+import { transporter } from '../config/mailer';
 import { ContactController } from './mail.controller';
 
 @Module({

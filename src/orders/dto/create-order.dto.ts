@@ -1,6 +1,6 @@
 import { IsUUID, IsOptional, IsArray, ValidateNested, IsString, IsNumber, IsDateString, IsEnum } from 'class-validator';
 import { Type } from 'class-transformer';
-import { OrderStatus } from 'src/orders/entities/order.entity'; // Asumiendo que OrderStatus está definido aquí
+import { OrderStatus } from '../../orders/entities/order.entity'; // Asumiendo que OrderStatus está definido aquí
 
 class OrderItemDto {
   @IsOptional()

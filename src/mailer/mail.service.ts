@@ -1,7 +1,7 @@
 import { MailerService } from '@nestjs-modules/mailer';
 import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import { Cases, SendMailDto } from './dto/sendMail.dto';
-import { CLIENT_URL, SERVER_URL } from 'src/config/enviroments';
+import { CLIENT_URL, SERVER_URL } from '../config/enviroments';
 
 export interface Response {
   message?: string;

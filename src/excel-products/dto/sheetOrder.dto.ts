@@ -1,6 +1,6 @@
 import { Transform } from 'class-transformer';
 import { IsNotEmpty, IsOptional, IsString, IsUUID, IsEnum, IsDateString } from 'class-validator';
-import { OrderStatus } from 'src/orders/entities/order.entity';
+import { OrderStatus } from '../../orders/entities/order.entity';
 
 const normalizeString = (v: any) => (v === null || v === undefined ? '' : String(v).trim());
 

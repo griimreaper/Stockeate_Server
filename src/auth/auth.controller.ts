@@ -8,7 +8,6 @@ import {
   Get,
   Param,
   Post,
-  UnauthorizedException,
   ValidationPipe,
 } from '@nestjs/common';
 import { AuthService } from './auth.service';
@@ -19,8 +18,7 @@ import { GetUser } from './decorator/auth-user.decorator';
 import { JwtAuthGuard } from './guards/jwt-auth-guard';
 import { IGetUser } from './interfaces/getUser.interface';
 import { SignupDto } from './dto/signup.dto';
-import { LoginDto } from 'src/users/dto/login-user.dto';
-import { log } from 'console';
+import { LoginDto } from '../users/dto/login-user.dto';
 
 @Controller('auth')
 export class AuthController {

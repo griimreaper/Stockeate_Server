@@ -8,13 +8,12 @@ import { UsersService } from '../users/users.service';
 import { ResetPasswordDto } from './dto/reset-password.dto';
 import { ChangePasswordDto } from './dto/change-password.dto';
 import { IGetUser } from './interfaces/getUser.interface';
-import { TenantsService } from 'src/tenants/tenants.service';
-import { Tenant } from 'src/tenants/entities/tenant.entity';
+import { TenantsService } from '../tenants/tenants.service';
+import { Tenant } from '../tenants/entities/tenant.entity';
 import { SignupDto } from './dto/signup.dto';
 import { RecoverPasswordDto } from './dto/recover-password.dto';
-import { Cases, SendMailDto } from 'src/mailer/dto/sendMail.dto';
-import { MailService } from 'src/mailer/mail.service';
-import { CreateUserDto } from 'src/users/dto/create-user.dto';
+import { Cases, SendMailDto } from '../mailer/dto/sendMail.dto';
+import { MailService } from '../mailer/mail.service';
 
 @Injectable()
 export class AuthService {

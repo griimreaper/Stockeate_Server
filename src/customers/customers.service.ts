@@ -4,8 +4,8 @@ import { Customer } from './entities/customer.entity';
 import { CreateCustomerDto } from './dto/create-customer.dto';
 import { UpdateCustomerDto } from './dto/update-customer.dto';
 import * as xlsx from "xlsx";
-import { SheetsCustomerUpdateDto } from 'src/excel-products/dto/sheetCustomerUpdate.dto';
-import { SheetsCustomerDto } from 'src/excel-products/dto/sheetCustomer.dto';
+import { SheetsCustomerUpdateDto } from '../excel-products/dto/sheetCustomerUpdate.dto';
+import { SheetsCustomerDto } from '../excel-products/dto/sheetCustomer.dto';
 
 @Injectable()
 export class CustomersService {

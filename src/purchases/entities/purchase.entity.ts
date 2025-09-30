@@ -2,7 +2,7 @@ import { Table, Column, Model, DataType, HasMany, ForeignKey, BelongsTo, BeforeS
 import { v4 as uuidv4 } from 'uuid';
 import { Tenant } from '../../tenants/entities/tenant.entity';
 import { Supplier } from '../../suppliers/entities/supplier.entity';
-import { PurchaseItem } from 'src/purchase-items/entities/purchase-item.entity';
+import { PurchaseItem } from '../../purchase-items/entities/purchase-item.entity';
 
 @Table({
   tableName: 'Purchases',

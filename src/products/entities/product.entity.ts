@@ -12,11 +12,11 @@ import {
     BeforeCreate,
 } from 'sequelize-typescript';
 import { Tenant } from '../../tenants/entities/tenant.entity';
-import { OrderItem } from 'src/order-items/entities/order-item.entity';
+import { OrderItem } from '../../order-items/entities/order-item.entity';
 import { v4 as uuidv4 } from 'uuid';
-import { Category } from 'src/categories/entities/category.entity';
-import { CategoryProduct } from 'src/categories/entities/categoryProducts.entity';
-import { PurchaseItem } from 'src/purchase-items/entities/purchase-item.entity';
+import { Category } from '../../categories/entities/category.entity';
+import { CategoryProduct } from '../../categories/entities/categoryProducts.entity';
+import { PurchaseItem } from '../../purchase-items/entities/purchase-item.entity';
 
 export enum ProductStatus {
     ACTIVE = 'active',

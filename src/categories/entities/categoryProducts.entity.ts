@@ -1,5 +1,5 @@
 import { Table, Column, Model, DataType, ForeignKey } from 'sequelize-typescript';
-import { Product } from 'src/products/entities/product.entity';
+import { Product } from '../../products/entities/product.entity';
 import { Category } from './category.entity';
 
 @Table({ tableName: 'CategoryProducts', timestamps: false, underscored: true })

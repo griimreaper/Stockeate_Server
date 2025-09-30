@@ -1,12 +1,12 @@
 import { Body, Controller, Get, Param, Post, Query, Res, UseGuards, Req, BadRequestException } from '@nestjs/common';
 import { ExcelService } from './excel.service';
-import { JwtAuthGuard } from 'src/auth/guards/jwt-auth-guard';
-import { RolesGuard } from 'src/auth/guards/rolesGuard';
-import { Roles } from 'src/auth/decorator/roles.decorator';
-import { UserRole } from 'src/users/entities/user.entity';
+import { JwtAuthGuard } from '../auth/guards/jwt-auth-guard';
+import { RolesGuard } from '../auth/guards/rolesGuard';
+import { Roles } from '../auth/decorator/roles.decorator';
+import { UserRole } from '../users/entities/user.entity';
 import { Request, Response } from 'express';
-import { GetUser } from 'src/auth/decorator/auth-user.decorator';
-import { IGetUser } from 'src/auth/interfaces/getUser.interface';
+import { GetUser } from '../auth/decorator/auth-user.decorator';
+import { IGetUser } from '../auth/interfaces/getUser.interface';
 
 @Controller('excel')
 @UseGuards(JwtAuthGuard, RolesGuard)

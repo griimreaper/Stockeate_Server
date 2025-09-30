@@ -1,8 +1,8 @@
 import { Injectable, BadRequestException } from '@nestjs/common';
 import { Tenant } from '../tenants/entities/tenant.entity';
-import { Cases, SendMailDto } from 'src/mailer/dto/sendMail.dto';
-import { User } from 'src/users/entities/user.entity';
-import { MailService } from 'src/mailer/mail.service';
+import { Cases, SendMailDto } from '../mailer/dto/sendMail.dto';
+import { User } from '../users/entities/user.entity';
+import { MailService } from '../mailer/mail.service';
 
 @Injectable()
 export class PaymentsService {

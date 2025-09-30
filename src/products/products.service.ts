@@ -4,16 +4,16 @@ import { CreateProductDto } from './dto/create-product.dto';
 import { UpdateProductDto } from './dto/update-product.dto';
 import { Product, ProductStatus } from './entities/product.entity';
 import { col, fn, Op, Order } from 'sequelize';
-import { Category } from 'src/categories/entities/category.entity';
+import { Category } from '../categories/entities/category.entity';
 import * as xlsx from "xlsx";
-import { SheetsProductsDto } from 'src/excel-products/dto/sheetProduct.dto';
-import { PurchaseItem } from 'src/purchase-items/entities/purchase-item.entity';
-import { Purchase } from 'src/purchases/entities/purchase.entity';
-import { Supplier } from 'src/suppliers/entities/supplier.entity';
-import { CategoriesService } from 'src/categories/categories.service';
-import { VercelBlobService } from 'src/files/vercel-storage.service';
+import { SheetsProductsDto } from '../excel-products/dto/sheetProduct.dto';
+import { PurchaseItem } from '../purchase-items/entities/purchase-item.entity';
+import { Purchase } from '../purchases/entities/purchase.entity';
+import { Supplier } from '../suppliers/entities/supplier.entity';
+import { CategoriesService } from '../categories/categories.service';
+import { VercelBlobService } from '../files/vercel-storage.service';
 import axios from 'axios';
-import { OrderItem } from 'src/order-items/entities/order-item.entity';
+import { OrderItem } from '../order-items/entities/order-item.entity';
 
 @Injectable()
 export class ProductsService {

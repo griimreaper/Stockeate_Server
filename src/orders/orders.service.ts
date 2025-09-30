@@ -7,8 +7,8 @@ import { Product } from '../products/entities/product.entity';
 import { CreateOrderDto } from './dto/create-order.dto';
 import { UpdateOrderDto } from './dto/update-order.dto';
 import * as xlsx from 'xlsx';
-import { User } from 'src/users/entities/user.entity';
-import { SheetsOrderDto } from 'src/excel-products/dto/sheetOrder.dto';
+import { User } from '../users/entities/user.entity';
+import { SheetsOrderDto } from '../excel-products/dto/sheetOrder.dto';
 import { Op } from 'sequelize';
 
 @Injectable()

@@ -10,9 +10,9 @@ import {
 } from 'sequelize-typescript';
 import { User } from '../../users/entities/user.entity';
 import { Tenant } from '../../tenants/entities/tenant.entity';
-import { OrderItem } from 'src/order-items/entities/order-item.entity';
+import { OrderItem } from '../../order-items/entities/order-item.entity';
 import { v4 as uuidv4 } from 'uuid';
-import { Customer } from 'src/customers/entities/customer.entity';
+import { Customer } from '../../customers/entities/customer.entity';
 
 export enum OrderStatus {
     PENDING = 'pending',

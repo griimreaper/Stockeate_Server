@@ -3,9 +3,9 @@ import { PurchasesService } from './purchases.service';
 import { PurchasesController } from './purchases.controller';
 import { Purchase } from './entities/purchase.entity';
 import { SequelizeModule } from '@nestjs/sequelize';
-import { PurchaseItem } from 'src/purchase-items/entities/purchase-item.entity';
-import { ProductsModule } from 'src/products/products.module';
-import { SuppliersModule } from 'src/suppliers/suppliers.module';
+import { PurchaseItem } from '../purchase-items/entities/purchase-item.entity';
+import { ProductsModule } from '../products/products.module';
+import { SuppliersModule } from '../suppliers/suppliers.module';
 
 @Module({
   imports: [

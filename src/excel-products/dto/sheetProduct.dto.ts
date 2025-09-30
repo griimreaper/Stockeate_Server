@@ -8,7 +8,7 @@ import {
   IsUrl,
   Min,
 } from 'class-validator';
-import { ProductStatus } from 'src/products/entities/product.entity';
+import { ProductStatus } from '../../products/entities/product.entity';
 
 const normalizeNumber = (v: any) => {
   if (v === null || v === undefined || v === '') return NaN;

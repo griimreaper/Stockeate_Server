@@ -3,13 +3,13 @@ import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';
 import { JwtModule } from '@nestjs/jwt';
 import { JwtStrategy } from './strategy/jwt.strategy';
-import { UsersModule } from 'src/users/users.module';
+import { UsersModule } from '../users/users.module';
 import { SequelizeModule } from '@nestjs/sequelize';
-import { User } from 'src/users/entities/user.entity';
+import { User } from '../users/entities/user.entity';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { TenantsService } from 'src/tenants/tenants.service';
-import { Tenant } from 'src/tenants/entities/tenant.entity';
-import { MailService } from 'src/mailer/mail.service';
+import { TenantsService } from '../tenants/tenants.service';
+import { Tenant } from '../tenants/entities/tenant.entity';
+import { MailService } from '../mailer/mail.service';
 
 @Module({
   imports: [

@@ -7,8 +7,8 @@ import { Product } from '../products/entities/product.entity';
 import { CreatePurchaseDto } from './dto/create-purchase.dto';
 import { UpdatePurchaseDto } from './dto/update-purchase.dto';
 import * as xlsx from 'xlsx';
-import { User } from 'src/users/entities/user.entity';
-import { SheetsPurchaseDto } from 'src/excel-products/dto/sheetPurchase.dto';
+import { User } from '../users/entities/user.entity';
+import { SheetsPurchaseDto } from '../excel-products/dto/sheetPurchase.dto';
 
 @Injectable()
 export class PurchasesService {

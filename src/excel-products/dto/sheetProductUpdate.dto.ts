@@ -1,6 +1,6 @@
 import { IsOptional, IsString, IsNumber, Min, IsEnum } from 'class-validator';
 import { Transform } from 'class-transformer';
-import { ProductStatus } from 'src/products/entities/product.entity';
+import { ProductStatus } from '../../products/entities/product.entity';
 
 const normalizeNumber = (v: any) => {
   if (v === null || v === undefined || v === '') return NaN;

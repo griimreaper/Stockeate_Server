@@ -7,8 +7,8 @@ import {
   BelongsTo,
   Default,
 } from 'sequelize-typescript';
-import { Order } from 'src/orders/entities/order.entity';
-import { Product } from 'src/products/entities/product.entity';
+import { Order } from '../../orders/entities/order.entity';
+import { Product } from '../../products/entities/product.entity';
 import { v4 as uuidv4 } from 'uuid';
 
 @Table({

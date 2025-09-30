@@ -4,7 +4,7 @@ import { Category } from './entities/category.entity';
 import { CreateCategoryDto } from './dto/create-category.dto';
 import { UpdateCategoryDto } from './dto/update-category.dto';
 import * as xlsx from 'xlsx';
-import { Product } from 'src/products/entities/product.entity';
+import { Product } from '../products/entities/product.entity';
 import { CategoryProduct } from './entities/categoryProducts.entity';
 
 @Injectable()

@@ -10,8 +10,8 @@ import { Supplier } from '../suppliers/entities/supplier.entity';
 import { Purchase } from '../purchases/entities/purchase.entity';
 import { Category } from '../categories/entities/category.entity';
 import { Tenant } from '../tenants/entities/tenant.entity';
-import { PurchaseItem } from 'src/purchase-items/entities/purchase-item.entity';
-import { CategoryProduct } from 'src/categories/entities/categoryProducts.entity';
+import { PurchaseItem } from '../purchase-items/entities/purchase-item.entity';
+import { CategoryProduct } from '../categories/entities/categoryProducts.entity';
 
 @Module({
   imports: [

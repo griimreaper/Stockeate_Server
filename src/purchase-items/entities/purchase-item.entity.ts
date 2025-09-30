@@ -1,6 +1,6 @@
 import { Table, Column, Model, DataType, ForeignKey, BelongsTo } from 'sequelize-typescript';
 import { v4 as uuidv4 } from 'uuid';
-import { Purchase } from 'src/purchases/entities/purchase.entity';
+import { Purchase } from '../../purchases/entities/purchase.entity';
 import { Product } from '../../products/entities/product.entity';
 
 @Table({

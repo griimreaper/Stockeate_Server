@@ -16,9 +16,9 @@ import { UserRole } from '../users/entities/user.entity';
 import { GetUser } from '../auth/decorator/auth-user.decorator';
 import { IGetUser } from '../auth/interfaces/getUser.interface';
 import { Op } from 'sequelize';
-import { PurchasesService } from 'src/purchases/purchases.service';
-import { UpdatePurchaseDto } from 'src/purchases/dto/update-purchase.dto';
-import { CreatePurchaseDto } from 'src/purchases/dto/create-purchase.dto';
+import { PurchasesService } from '../purchases/purchases.service';
+import { UpdatePurchaseDto } from '../purchases/dto/update-purchase.dto';
+import { CreatePurchaseDto } from '../purchases/dto/create-purchase.dto';
 
 @Controller('purchases')
 @UseGuards(JwtAuthGuard, RolesGuard)
